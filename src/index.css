@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neuclean-blue: #023449;
+  --color-neuclean-green: #60B566;
+  --font-sans: 'Outfit', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
