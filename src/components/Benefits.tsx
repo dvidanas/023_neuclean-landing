@@ -4,15 +4,15 @@ export default function Benefits() {
   const painPoints = [
     {
       icon: <AlertTriangle className="h-6 w-6 text-red-500" />,
-      text: "Quiebres de stock recurrentes en insumos críticos"
+      text: "Proveedores de servicios que tercerizan insumos a alto costo"
     },
     {
       icon: <AlertTriangle className="h-6 w-6 text-red-500" />,
-      text: "Costos variables e inestabilidad en precios mayoristas"
+      text: "Falta de stock continuo en papelería y sanitizantes"
     },
     {
       icon: <AlertTriangle className="h-6 w-6 text-red-500" />,
-      text: "Demoras de entrega de proveedores fuera de Neuquén"
+      text: "Límites en despacho local para volúmenes industriales"
     }
   ];
 
@@ -20,20 +20,20 @@ export default function Benefits() {
     {
       id: 'benefit-stock',
       icon: <PackageCheck className="h-8 w-8 text-white" />,
-      title: "Stock 100% Asegurado",
-      description: "Contratos de abastecimiento programados. Almacenamos tu stock de seguridad en nuestro centro de distribución de Neuquén para garantizar disponibilidad todo el año."
+      title: "Distribución Mayorista Directa",
+      description: "No brindamos servicios de limpieza. Nos concentramos exclusivamente en la venta de insumos, asegurando stock permanente de marcas líderes a precios directos de fábrica."
     },
     {
       id: 'benefit-prices',
       icon: <Landmark className="h-8 w-8 text-white" />,
-      title: "Precios Corporativos Estables",
-      description: "Esquemas de facturación B2B diseñados para tu volumen. Precios acordados por contrato para facilitar el control de costos mensuales de tu empresa."
+      title: "Costos de Escala Estables",
+      description: "Contratos de suministro que congelan tarifas por volumen. Facturación corporativa A y B adaptada al flujo de compras de tu departamento de compras."
     },
     {
       id: 'benefit-logistics',
       icon: <Truck className="h-8 w-8 text-white" />,
-      title: "Logística Express Local",
-      description: "Flota de distribución propia en Neuquén capital, zonas industriales (Añelo/Vaca Muerta) y aledaños. Entregas coordinadas en 24/48 hs hábiles."
+      title: "Logística Propia en Neuquén",
+      description: "Entregamos directamente en tus plantas, oficinas o depósitos. Logística integrada en Neuquén capital, Añelo, Cipolletti y Plottier sin costos ocultos."
     }
   ];
 
@@ -44,13 +44,13 @@ export default function Benefits() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <h2 className="text-xs font-bold uppercase tracking-widest text-neuclean-green">
-            El Valor de un Socio Estratégico
+            Enfoque 100% Comercial y de Producto
           </h2>
           <p className="text-3xl sm:text-4xl font-extrabold text-neuclean-blue tracking-tight">
-            Optimizamos la Higiene de tu Empresa
+            ¿Por qué NeuClean como tu Socio de Abastecimiento?
           </p>
           <p className="text-lg text-slate-600">
-            Dejá de lidiar con proveedores minoristas o demoras interprovinciales. Una respuesta integral a las necesidades corporativas.
+            A diferencia de empresas multiservicio, somos especialistas dedicados en exclusiva al almacenamiento, venta y distribución de insumos de higiene institucional.
           </p>
         </div>
 
@@ -60,7 +60,7 @@ export default function Benefits() {
           {/* Problem Box (Left 4 cols) */}
           <div className="lg:col-span-4 bg-white border border-slate-200 p-8 rounded-2xl shadow-sm space-y-6">
             <h3 className="text-xl font-bold text-slate-900 border-b border-slate-100 pb-4">
-              ¿Frustrado con tu proveedor actual?
+              ¿Problemas con proveedores mixtos?
             </h3>
             <ul className="space-y-4">
               {painPoints.map((item, index) => (
@@ -72,7 +72,7 @@ export default function Benefits() {
             </ul>
             <div className="pt-2 bg-slate-50 p-4 rounded-xl border border-dashed border-slate-200">
               <p className="text-xs text-slate-500 font-semibold text-center uppercase tracking-wide">
-                La solución de NeuClean es diferente
+                Foco exclusivo en venta de insumos
               </p>
             </div>
           </div>
@@ -83,7 +83,7 @@ export default function Benefits() {
               <div
                 key={benefit.id}
                 id={benefit.id}
-                className="bg-white hover:bg-white border border-slate-200/80 p-6 rounded-2xl shadow-sm hover:shadow-md hover:border-neuclean-green/35 transition-all duration-300 flex flex-col items-start space-y-4 group"
+                className="bg-white border border-slate-200/80 p-6 rounded-2xl shadow-sm hover:shadow-md hover:border-neuclean-green/35 transition-all duration-300 flex flex-col items-start space-y-4 group"
               >
                 <div className="p-3 bg-neuclean-blue rounded-xl text-white group-hover:bg-neuclean-green transition-colors duration-300">
                   {benefit.icon}

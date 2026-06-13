@@ -2,6 +2,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Benefits from './components/Benefits';
 import Categories from './components/Categories';
+import Products from './components/Products';
 import QuoteForm from './components/QuoteForm';
 import Footer from './components/Footer';
 
@@ -23,6 +24,9 @@ export default function App() {
         
         {/* Product Category Grid */}
         <Categories />
+        
+        {/* Products Flagship Shop Section */}
+        <Products />
         
         {/* Webhook-integrated B2B Quotation Form */}
         <QuoteForm />

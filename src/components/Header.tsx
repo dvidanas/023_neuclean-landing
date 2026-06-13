@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Menu, X, Sparkles } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import Logo from './Logo';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,6 +9,7 @@ export default function Header() {
     { name: 'Inicio', href: '#inicio' },
     { name: 'Beneficios', href: '#beneficios' },
     { name: 'Categorías', href: '#categorias' },
+    { name: 'Productos', href: '#productos' },
     { name: 'Cotización B2B', href: '#cotizar' }
   ];
 
@@ -17,18 +19,8 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           
           {/* Logo (izq) */}
-          <a href="#inicio" className="flex items-center gap-2 group" id="header-logo">
-            <div className="bg-neuclean-blue p-2 rounded-lg text-white group-hover:bg-neuclean-green transition-colors duration-300">
-              <Sparkles className="h-6 w-6" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-2xl font-extrabold text-neuclean-blue tracking-tight leading-none">
-                Neu<span className="text-neuclean-green">Clean</span>
-              </span>
-              <span className="text-[10px] text-slate-500 uppercase tracking-widest font-semibold mt-0.5">
-                Higiene Profesional
-              </span>
-            </div>
+          <a href="#inicio" className="flex items-center" id="header-logo">
+            <Logo variant="dark" className="h-12 w-auto" />
           </a>
 
           {/* Menú ancla (centro - desktop) */}

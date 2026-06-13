@@ -1,4 +1,5 @@
-import { Sparkles, Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import Logo from './Logo';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -12,13 +13,8 @@ export default function Footer() {
           
           {/* Col 1: About / Branding */}
           <div className="space-y-6">
-            <a href="#inicio" className="flex items-center gap-2 group">
-              <div className="bg-white/10 p-2 rounded-lg text-neuclean-green group-hover:bg-neuclean-green group-hover:text-slate-950 transition-colors duration-300">
-                <Sparkles className="h-6 w-6" />
-              </div>
-              <span className="text-2xl font-extrabold text-white tracking-tight">
-                Neu<span className="text-neuclean-green">Clean</span>
-              </span>
+            <a href="#inicio" className="flex items-center group">
+              <Logo variant="light" className="h-12 w-auto" />
             </a>
             <p className="text-sm text-slate-400 leading-relaxed">
               NeuClean es el socio estratégico en higiene y desinfección profesional para empresas líderes en Neuquén y la Patagonia. Distribución mayorista e insumos B2B con logística propia.
@@ -59,7 +55,10 @@ export default function Footer() {
                 <a href="#beneficios" className="hover:text-neuclean-green transition-colors duration-200">Beneficios B2B</a>
               </li>
               <li>
-                <a href="#categorias" className="hover:text-neuclean-green transition-colors duration-200">Categorías de Productos</a>
+                <a href="#categorias" className="hover:text-neuclean-green transition-colors duration-200">Categorías</a>
+              </li>
+              <li>
+                <a href="#productos" className="hover:text-neuclean-green transition-colors duration-200">Productos Estrella</a>
               </li>
               <li>
                 <a href="#cotizar" className="hover:text-neuclean-green transition-colors duration-200">Solicitar Cotización</a>
